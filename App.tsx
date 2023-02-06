@@ -1,10 +1,10 @@
-import { View } from "react-native";
-import { Groups } from "./src";
-
+import { Groups } from "./src/screens/groups";
+import { ThemeProvider } from "styled-components";
+import theme from "./src/themes";
 export default function App() {
   return (
-    <View>
+    <ThemeProvider theme={theme}>
       <Groups/>
-    </View>
+    </ThemeProvider>
   );
 }
