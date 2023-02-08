@@ -9,7 +9,7 @@ type THeaderProps = {
 export function Header({ showBackButton = false }: THeaderProps) {
   const navigation = useNavigation()
   function handleGoBack(){
-    navigation.navigate('group');
+    navigation.navigate('groups');
   }
   return (
     <Container>
